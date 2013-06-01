@@ -1,0 +1,256 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+@import url("pygment.css");
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    font: 18px/26px 'Jacques+Francois','Gilda Display',Serif;
+    margin: auto;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.wrapper {
+    max-width: 30em;
+    margin: auto;
+}
+
+article {
+    line-height: 1.6;
+    margin-bottom: 4em;
+}
+
+.title {
+    text-align: center;
+    font-weight: normal;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container,
+.footer-container,
+.main aside {
+    background-color: #000031;
+    color: white;
+}
+
+.header-container {
+        padding-bottom: 20px;
+}
+
+
+
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    padding: 20px 0;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+nav ul {
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    display: block !important;
+    list-style: none;
+}
+
+nav ul li {
+    margin:auto;
+    display: block;
+    text-align: center;
+    padding: 0.5em;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #bbb;
+}
+nav a:visited {
+    color: #ddd;
+}
+
+nav form {
+    display: inline-block;
+}
+
+nav form .search {
+    padding: .3em .5em .3em .3em;
+    font-size: .75em;
+    line-height: 1.4em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid #262656;
+    background-color: #000031;
+    color: #ddd;
+    font-family: 'Jacques+Francois','Gilda Display',Serif;
+    text-align: center;
+
+}
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
