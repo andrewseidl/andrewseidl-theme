@@ -1,31 +1,22 @@
-/* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
-
+@import url("normalize.min.css");
 @import url("pygment.css");
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
+@import url("print.css");
 
 body {
-    font-size: 1em;
-    font: 18px/26px 'Jacques+Francois','Gilda Display',Serif;
+    font: 16px/24px 'PT Serif', serif;
     margin: auto;
+    background-color: #035;
+    color: #fafafa;
 }
 
+.header-container, .footer-container {
+    font: 16px/24px 'PT Sans Narrow', sans-serif;
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+}
+
+.main-container {
+    background-color: #fafafa;
+    color: #035;
 }
 
 img {
@@ -38,10 +29,24 @@ fieldset {
     padding: 0;
 }
 
+.highlight pre, code {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 0.3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 0.8em;
+}
 
+code {
+    padding: 0.1em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
 
 .wrapper {
-    max-width: 30em;
+    max-width: 35em;
     margin: auto;
 }
 
@@ -50,125 +55,118 @@ article {
     margin-bottom: 4em;
 }
 
+article header abbr, p small {
+    white-space: nowrap;
+    float: right;
+}
+
 .title {
     text-align: center;
     font-weight: normal;
-}
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container,
-.footer-container,
-.main aside {
-    background-color: #000031;
-    color: white;
 }
 
 .header-container {
         padding-bottom: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: #257;
+    border-bottom: 1px dotted #257;
+}
+a:hover {
+    color: #257;
+    background-color: white;
+}
+a:visited {
+    color: #035;
+}
 
-
-
-
-/* ==============
-    MOBILE: Main
-   ============== */
+.header-container a,
+.footer-container a {
+    color: #fafafa;
+    border-bottom: none;
+}
+.header-container a:hover,
+.footer-container a:hover {
+    color: #fafafa;
+    background-color: transparent;
+    border-bottom: 4px solid #368;
+}
+.header-container a:visited,
+.footer-container a:visited {
+    color: #fafafa;
+}
 
 .main {
-    padding: 30px 0;
+    padding: 20px;
 }
 
-.main article h1 {
-    font-size: 2em;
+.main h1, h2, h3, h4 {
+    font-size: 1.15em;
+    font-weight: 100;
+    font-family: 'PT Sans Narrow', serif;
 }
 
-.main aside {
-    padding: 0px 5% 10px;
+.main header {
+    margin-bottom: 1em;
 }
 
 .footer-container footer {
     padding: 20px 0;
 }
 
+.social i {
+    font-size: 150%;
+}
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-nav ul {
+nav ul, .social ul {
     margin: auto;
     padding: 0;
     width: 100%;
     text-align: center;
-    display: block !important;
     list-style: none;
+    vertical-align: middle;
 }
 
-nav ul li {
+nav ul li, .social ul li {
     margin:auto;
-    display: block;
+    display: inline;
     text-align: center;
-    padding: 0.5em;
-}
-
-nav a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-}
-
-nav a:hover {
-    color: #bbb;
-}
-nav a:visited {
-    color: #ddd;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    vertical-align: middle;
 }
 
 nav form {
     display: inline-block;
 }
 
+/*article header {
+    text-align: center;
+}*/
+
+.main-container h1, h2, h3 {
+    margin: 0;
+}
+
+.main-container p {
+    margin-top: 0;
+}
+
 nav form .search {
-    padding: .3em .5em .3em .3em;
+    /*padding: .3em .5em .3em .3em;*/
     font-size: .75em;
-    line-height: 1.4em;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    -ms-border-radius: 0.5em;
-    -o-border-radius: 0.5em;
+    line-height: 1,4;
     border-radius: 0.5em;
-    border: 1px solid #262656;
-    background-color: #000031;
-    color: #ddd;
-    font-family: 'Jacques+Francois','Gilda Display',Serif;
+    border: 1px solid #479;
+    background-color: #035;
+    color: #fafafa;
+    font-family: 'PT Serif', serif;
     text-align: center;
 
 }
 
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
 
 .clearfix:before,
 .clearfix:after {
@@ -182,75 +180,4 @@ nav form .search {
 
 .clearfix {
     *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
 }
