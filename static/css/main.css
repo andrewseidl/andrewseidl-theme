@@ -28,10 +28,10 @@ a:visited {
 
 header abbr, p small {
     white-space: nowrap;
-    /*color: #333;*/
+    color: #333;
 }
 article header abbr, p small {
-        float: right;
+    float: right;
 }
 
 code {
@@ -58,19 +58,22 @@ img {
 
 .header-container a,
 .footer-container a {
-    color: #911;
+    color: #666;
     border-bottom: none;
     font-weight: normal;
 }
 .header-container a:hover,
 .footer-container a:hover {
-    color: #911;
+    color: #666;
     background-color: transparent;
-    border-bottom: 3px solid #911;
+    border-bottom: 3px solid #666;
 }
 .header-container a:visited,
 .footer-container a:visited {
-    color: #911;
+    color: #666;
+}
+.title {
+    font-size: 2em;
 }
 
 .header-container nav {
@@ -121,26 +124,18 @@ nav form {
     margin-bottom: 1em;
 }
 .main-container h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
     font-weight: 200;
     font-family: 'PT Sans Narrow', serif;
     color: #b44;
-    margin: 0;
 }
-.main-container h1 {
-    font-size: 1.4em;
-}
-.main-container h2 {
-    font-size: 1.2em;
-}
-.main-container h3 {
-    font-size: 1.1em;
-}
-.main-container h4 {
-    font-size: 1em;
-}
-.main-container p {
-    margin-top: 0;
-}
+h1 { font-size: 1.4em; }
+h2 { font-size: 1.2em; }
+h3 { font-size: 1.1em; }
+h4 { font-size: 1em; }
+p { margin-top: 0; }
 
 .highlight pre, code {
     background-color: #faf5f5;
