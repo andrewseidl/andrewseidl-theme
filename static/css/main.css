@@ -58,19 +58,19 @@ img {
 
 .header-container a,
 .footer-container a {
-    color: #666;
+    color: #333;
     border-bottom: none;
     font-weight: normal;
 }
 .header-container a:hover,
 .footer-container a:hover {
-    color: #666;
+    color: #333;
     background-color: transparent;
-    border-bottom: 3px solid #666;
+    border-bottom: 3px solid #333;
 }
 .header-container a:visited,
 .footer-container a:visited {
-    color: #666;
+    color: #333;
 }
 .title {
     font-size: 2em;
